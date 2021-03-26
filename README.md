@@ -1,2 +1,2 @@
 # freecodecamp
-Repository to host my freecodecamp.com projects
+Repository to host my freecodecamp.org projects
