@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Survey Form</title>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 id="title" class="text-center">FCC: Survey Form</h1>
+
+    <p id="description" class="text-center">Thank you for taking your time filling up the form</p>
+  </header>
+
+  <main class="main">
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label><br>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label><br>
+        <input id="email" name="email" type="email" placeholder="Enter your email" required>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="age" id="number-label">Age</label><br>
+        <input id="number" name="number" type="number" min="13" max="100" placeholder="Age">
+      </div>
+
+      <div class="form-group">
+        <p>What is your role?</p>
+        <select id="dropdown" name="role" required>
+          <option value="Student">Student</option>
+          <option value="Full-Time-Job">Full Time Job</option>
+          <option value="Part-Time-Job">Part Time Job</option>
+          <option value="Other">Other</option>
+          <option value="prefer not">Prefer not to say</option>
+        </select>
+      </div>
+
+      <div class="form-group gender">
+        <p>Gender</p>
+        <label for="male">
+          <input name="gender" id="male" type="radio" value="male"> Male
+        </label>
+
+        <label for="female">
+          <input name="gender" id="female" type="radio" value="female">
+          Female
+        </label>
+
+        <label for="other">
+          <input name="gender" id="other" type="radio" value="other">
+          Other
+        </label>
+
+        <label for="prefer-not">
+          <input name="gender" id="prefer-not" type="radio" value="prefer-not">
+          Prefer not to say
+        </label>
+      </div>
+
+      <div class="form-group interests">
+        <label for="interest">What are your tech interests?</label> <br>
+        <input id="interest1" type="checkbox" name="interest1" value="web-dev">
+        <label for="interest1">Web Development</label>
+        <br>
+        <input id="interest2" type="checkbox" name="interest2" value="android">
+        <label for="interest2">Android Development</label>
+        <br>
+        <input id="interest3" type="checkbox" name="interest3" value="machine-learning">
+        <label for="interest3">Machine Learning</label>
+        <br>
+        <input id="interest4" type="checkbox" name="interest4" value="iot">
+        <label for="interest4">Internet Of Things</label>
+        <br>
+        <input id="interest5" type="checkbox" name="interest5" value="cloud-computing">
+        <label for="interest5">Cloud Computing</label>
+      </div>
+
+      <div class="form-group">
+        <label for="comments">Any other suggestions or comments</label><br>
+        <textarea name="comments" id="comment"></textarea>
+      </div>
+
+      <div class="form-group">
+        <button type="submit" id="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>
